@@ -2,13 +2,13 @@
   "name": "Life OS",
   "short_name": "LifeOS",
   "description": "Personal command center for life management",
-  "start_url": "./",
+  "start_url": "/comfy-local-store/",
   "display": "standalone",
   "background_color": "#1a1f36",
   "theme_color": "#1a1f36",
   "icons": [
     {
-      "src": "./placeholder.svg",
+      "src": "/comfy-local-store/placeholder.svg",
       "sizes": "192x192",
       "type": "image/svg+xml"
     }

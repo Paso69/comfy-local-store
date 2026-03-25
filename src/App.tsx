@@ -39,7 +39,7 @@ const App = () => {
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/comfy-local-store">
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
