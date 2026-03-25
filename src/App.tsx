@@ -22,8 +22,6 @@ import PhoneProtocol from "./pages/PhoneProtocol";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
-
 const App = () => {
   const [ready, setReady] = useState(false);
 
