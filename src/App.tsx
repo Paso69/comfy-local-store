@@ -36,33 +36,31 @@ const App = () => {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/goals" element={<Goals />} />
-              <Route path="/tasks" element={<Tasks />} />
-              <Route path="/habits" element={<Habits />} />
-              <Route path="/routines" element={<RoutineBuilder />} />
-              <Route path="/schedule" element={<SchedulePlanner />} />
-              <Route path="/notes" element={<QuickCapture />} />
-              <Route path="/knowledge" element={<KnowledgeVault />} />
-              <Route path="/ideas" element={<IdeaBank />} />
-              <Route path="/trading" element={<TradingJournal />} />
-              <Route path="/financial" element={<FinancialRoadmap />} />
-              <Route path="/review" element={<WeeklyReview />} />
-              <Route path="/phone" element={<PhoneProtocol />} />
-              <Route path="/settings" element={<Settings />} />
-            </Route>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/goals" element={<Goals />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="/habits" element={<Habits />} />
+            <Route path="/routines" element={<RoutineBuilder />} />
+            <Route path="/schedule" element={<SchedulePlanner />} />
+            <Route path="/notes" element={<QuickCapture />} />
+            <Route path="/knowledge" element={<KnowledgeVault />} />
+            <Route path="/ideas" element={<IdeaBank />} />
+            <Route path="/trading" element={<TradingJournal />} />
+            <Route path="/financial" element={<FinancialRoadmap />} />
+            <Route path="/review" element={<WeeklyReview />} />
+            <Route path="/phone" element={<PhoneProtocol />} />
+            <Route path="/settings" element={<Settings />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
   );
 };
 
